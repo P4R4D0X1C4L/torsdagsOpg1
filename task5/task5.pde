@@ -3,6 +3,17 @@ void setup() {
   methodTwo(); 
 }
 
+void  checkWeekend(boolean  weekend)
+{
+  if  (weekend  ==  true)
+  {
+    println("Wuhuu it is a weekend!");
+  }
+  else 
+  {
+    println("It is not weekend yet");
+  }
+}
 /*
   The following method has an error in it. Fix the error and run it. 
 */
@@ -29,7 +40,7 @@ void methodOne()
 */
 void methodTwo() 
 {
-  int weekDay = 0  %  6; // 0 = Monday, 6 = Sunday. 
+  int weekDay = 5  %  7; // 0 = Monday, 6 = Sunday. 
   boolean weekend = false;
   
   if (weekDay <= 5)
@@ -46,34 +57,42 @@ void methodTwo()
   {
     case  0:
       println("Today is a Monday");
+      checkWeekend(weekend);
     break;
 
     case  1:
       println("Today is a Tuesday");
+      checkWeekend(weekend);
     break;
     
     case  2:
       println("Today is a Wednesday");
+      checkWeekend(weekend);
     break;
     
     case  3:
       println("Today is Thursday");
+      checkWeekend(weekend);
     break;
     
     case  4:
       println("Today is Friday");
+      checkWeekend(weekend);
     break;
     
     case  5:
       println("Today is a Saturday");
+      checkWeekend(weekend);
     break;
     
     case  6:
       println("Today is a Sunday");
+      checkWeekend(weekend);
     break;
     
     default:
       println("An error has happend");
+      checkWeekend(weekend);
     break;
   }
     
